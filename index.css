@@ -51,7 +51,7 @@ body{
 .counter{
     display: flex;
     position: relative;
-    background: green;
+    background: var(--color_4);
     bottom: 15px;
     left: 35px;
     height: 20px;
@@ -79,4 +79,75 @@ body{
 .options-list li{
     list-style: none;
     cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.options-list li:hover{
+    transform: scale(1.1); 
+    border: 1px solid var(--color_2);  
+    border-radius: 20px;
+    padding: 1px 10px 1px 10px;
+}
+
+.grid-products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    margin: 15px;
+}
+
+.card-products{
+    display: grid;
+    grid-template-rows: 240px 50px 70px 50px;
+    width: 250px;
+    border-radius: 20px;
+    background: var(--color_1);
+    transition: transform 0.5s ease;
+}
+
+.card-products:hover{
+    transform: scale(1.02);
+}
+
+.image-product{
+    height: 240px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title-card{
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.subtitle-card{
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.price-button{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+}
+
+.price-card{
+    place-self: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.add-cart{
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    background: var(--color_3);
+    color: var(--color_2);
+    border: 1px solid var(--color_2);
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.add-cart:hover{
+    transform: scale(1.1);
 }
