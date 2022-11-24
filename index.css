@@ -137,11 +137,13 @@ body{
 
 .title-card{
     font-weight: bolder;
+    font-size: 18px;
     padding: 10px;
 }
 
 .subtitle-card{
     font-weight: lighter;
+    font-size: 15px;
     padding: 10px;
 }
 
