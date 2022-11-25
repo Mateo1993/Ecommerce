@@ -10,6 +10,11 @@ body{
     color: var(--color_2);
     margin: 0px;
 }
+.mainContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 .searchBar{
     display: flex;
@@ -69,7 +74,6 @@ body{
 
 .counter{
     display: flex;
-    position: relative;
     background: var(--color_4);
     bottom: 15px;
     left: 35px;
@@ -106,6 +110,80 @@ body{
     border: 1px solid var(--color_2);  
     border-radius: 20px;
     padding: 1px 10px 1px 10px;
+}
+
+.carrito-compras{
+    position: absolute; 
+    /* overflow: hidden;
+    max-height: 0; */
+    visibility: visible;
+    left: 50vw;
+    height: 100vh;
+    width: 25vw;
+    background-color: var(--color_2);
+    border-radius: 20px 0px 0px 20px;
+}
+.top-carrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 25px;
+    border-bottom: 2px solid var(--color_1);
+}
+
+.title-carrito-compras{
+    color: var(--color_1);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.cart-outline-carrito{
+    color: var(--color_1);
+    font-size: 30px;
+}
+.grid-carrito{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10vw,330px));
+    grid-template-rows: repeat(auto-fit,minmax(70px,80px));
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-carrito{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 330px;
+    background: var(--color_1);
+    border-radius: 20px;
+}
+
+.imagen-card-carrito{
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+    border-radius: 50px;
+}
+
+.title-card-carrito{
+    font-size: 20px;
+    color: var(--color_2);
+    margin-left: 15px;
+}
+
+.price-card-carrito{
+    font-size: 18px;
+    font-weight: lighter;
+    color: var(--color_2);
+    margin-left: 70px;   
+}
+
+.trash{
+    font-size: 25px;
+    color: var(--color_2);
+    margin-left: 10px;
 }
 
 .grid-products{

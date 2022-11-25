@@ -1,13 +1,19 @@
-const boton = document.getElementById("addCart");
+/* const boton = document.getElementById("addCart");
 const counter = document.getElementById('counter');
-
 
 counter.textContent = 0;
 let value = 0;
 boton.addEventListener('click',()=>{
     value++;
     counter.textContent = value; 
-}) 
+})
+ */
+const toggleCarrito = ()=>{
+    const container = document.getElementById("click-carrito");
+    container.addEventListener('click',()=>{
+        container.classList.toggle("carrito-compras")
+    })
+}
 
 
 const cargarProducts = async()=>{
@@ -27,7 +33,7 @@ const HTMLresponse = document.getElementById("grid-products")
                 productos += `<div class="card-products" id="card-products">
                                 <img class="image-product" src="${product.image}" alt="producto">
                                 <h1 class="title-card">${product.title}</h1>
-                                <p class="subtitle-card">${product.category}</p>
+                                <p class="subtitle-card"></p>
                                 <div class="price-button">
                                     <div class="price-card">$${product.price}</div>
                                     <button class="add-cart" id="addCart" >Add to cart</button>
@@ -43,3 +49,4 @@ const HTMLresponse = document.getElementById("grid-products")
 }
 
 cargarProducts()
+toggleCarrito()

@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="mainContainer">
+    <div class="mainContainer" id="mainContainer">
+        <section class="carrito-compras" id="carrito-compras">
+            <div class="top-carrito">
+                <div class="title-carrito-compras">
+                    Carrito
+                </div>
+                <ion-icon name="cart-outline" class="cart-outline-carrito"></ion-icon>
+            </div>
+            <div class="grid-carrito">
+                <div class="card-carrito">
+                    <img class="imagen-card-carrito" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuWeAfn5mMy5k-KQInb1_0WVGzNeCOilNifA&usqp=CAU" alt="producto-carrito">
+                    <h1 class="title-card-carrito">
+                        Earings
+                    </h1>
+                    <p class="price-card-carrito">
+                        $10.00
+                    </p>
+                    <ion-icon name="trash" class="trash"></ion-icon>
+                </div>
+            </div>
+        </section>
         <header class="searchBar">
             <img class="logo" src="https://static.rfstat.com/renderforest/images/v2/landing-pics/logo_landing/g3.png" alt="logo-image">
             <div class="input-bar">
@@ -22,7 +42,7 @@
                     <!-- 1 -->
                 </div>
                 <ion-icon name="cart-outline" class="cart-outline"></ion-icon>
-                <p>Carrito</p>
+                <p id="click-carrito">Carrito</p>
                 <div/>
             </header>
             <nav class="options">
