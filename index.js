@@ -9,9 +9,10 @@ boton.addEventListener('click',()=>{
 })
  */
 const toggleCarrito = ()=>{
-    const container = document.getElementById("click-carrito");
-    container.addEventListener('click',()=>{
-        container.classList.toggle("carrito-compras")
+    const carrito = document.querySelector("#click-carrito");
+    carrito.addEventListener('click',()=>{
+        const menu = document.querySelector("#carrito-compras");
+        menu.classList.toggle("carrito-compras-hidden");
     })
 }
 

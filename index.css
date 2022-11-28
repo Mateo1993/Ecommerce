@@ -82,6 +82,9 @@ body{
     border-radius: 20px;
     place-content: center;
 }
+.click-carrito{
+    cursor: pointer;
+}
 
 .searchBar span{
     font-weight: bolder;
@@ -113,15 +116,19 @@ body{
 }
 
 .carrito-compras{
-    position: absolute; 
-    /* overflow: hidden;
-    max-height: 0; */
-    visibility: visible;
-    left: 50vw;
-    height: 100vh;
-    width: 25vw;
+    position: absolute;
+    margin-top: 75px;
+    right: 0px;
+    top: 0px;
+    height: 600px;
+    width: 375px;
     background-color: var(--color_2);
     border-radius: 20px 0px 0px 20px;
+    transition: 0.5s;
+}
+.carrito-compras-hidden{
+    overflow: hidden;
+    height: 0px;
 }
 .top-carrito{
     display: flex;
